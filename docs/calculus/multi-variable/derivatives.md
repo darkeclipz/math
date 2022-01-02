@@ -15,3 +15,23 @@ $$
 $$
 
 The main take away is that we give a small nudge to the variable we want to get the derivative of.
+
+## Symmetry in higher order derivatives
+
+A higher order derivative is when we take the derivative of function multiple times. This is denoted as
+
+$$
+\dfrac{\partial^2f}{\partial x^2}
+$$
+
+which means that we first take the derivative with respect to $x$, and then a second time with respect to $x$.
+
+Likewise, we can also take the derivative with respect to $x$, and then with respect to $y$. A beautiful result of this, is that this is the same as taking the derivative first with respect to $y$, and then with respect to $x$, which means that:
+
+$$
+\dfrac{\partial^2f}{\partial x \partial y} = \dfrac{\partial^2f}{\partial y \partial x}.
+$$
+
+## Simpler notation
+
+If you get tired of writing $\dfrac{\partial^2f}{\partial x \partial y}$, this can be written simpler as $f_{xy}$.
