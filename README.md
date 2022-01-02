@@ -1,2 +1,1 @@
-# math
-Notes about mathematical topics.
+# Math notes
