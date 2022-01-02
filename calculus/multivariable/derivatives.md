@@ -1,4 +1,4 @@
-# Multivariable derivatives
+# Multi variable derivatives
 
 ```math
 f(x,y)=x^2y
