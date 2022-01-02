@@ -1,4 +1,4 @@
-# Singlevariable derivatives
+# Single variable derivatives
 
 ## Standard derivatives table
 
