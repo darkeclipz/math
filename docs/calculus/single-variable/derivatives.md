@@ -1,6 +1,6 @@
 # Single variable derivatives
 
-## Formal definition of the derivative
+## Formal definition
 
 Let $f(x)$ be a function with a single variable $x$, then the formal definition of the derivative is:
 

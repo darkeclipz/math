@@ -1,6 +1,6 @@
 # Multi variable derivatives
 
-## Formal definition of the partial derivative of a two variable function
+## Formal definition
 
 Let $f(x, y)$ be a function with two variables, then the formal definition of the partial derivative of $f$ with respect to $x$ is:
 
