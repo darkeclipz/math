@@ -32,7 +32,7 @@ $$
 \dfrac{\partial^2f}{\partial x \partial y} = \dfrac{\partial^2f}{\partial y \partial x}.
 $$
 
-!!! warn
+!!! note
 
     The notion of a higher order derivative is only applicable if the second derivative is continuous around a point $P$, e.g. the point we are evaluating.
 
