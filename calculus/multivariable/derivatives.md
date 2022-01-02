@@ -1,3 +1,5 @@
 # Multivariable derivatives
 
-$f(x,y)=x^2y$.
+```math
+f(x,y)=x^2y
+```
