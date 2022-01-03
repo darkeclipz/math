@@ -5,7 +5,7 @@
 Let $f(x)$ be a function with a single variable $x$, then the formal definition of the derivative is:
 
 $$
-\dfrac{\mathrm{d}f}{\mathrm{d}x} = \lim_{h \rightarrow \infty} \dfrac{f(x+h) - f(x)}{h}.
+\dfrac{\mathrm{d}f}{\mathrm{d}x} = \lim_{h \rightarrow 0} \dfrac{f(x+h) - f(x)}{h}.
 $$
 
 ## Standard derivative table
