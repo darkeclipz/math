@@ -82,12 +82,6 @@ float march(in vec3 ro, in vec3 rd) {
     }
     ```
 
-### Credits
-
-|Author|License|
-|--|--|
-|Lars Rotgers|Public Domain|
-
 ## Normals
 
 A normal vector is the vector $\nabla f(\mathbf{X})$. 
