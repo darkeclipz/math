@@ -76,7 +76,7 @@ $$
 \nabla_{\vec v} f(x, y) = -\dfrac{\partial f}{\partial x} + 2\dfrac{\partial f}{\partial y}.
 $$
 
-Note that $\nabla_{\vec v}$ is used to denote the gradient of $f$ in the direction of $\vec{v}$. As you can see, we simply take the linear combination of the partial derivatives and each of the corresponding component in $\vec{v}$. The sharp eyed reader will see that this is the dot-product of $\vec{v}$ and the gradient of $f$, thus:
+Note that $\nabla_{\vec v}$ is used to denote the gradient of $f$ in the direction of $\vec{v}$. As you can see, we simply take the linear combination of the partial derivatives and each of the corresponding components in $\vec{v}$. The sharp eyed reader will see that this is the dot-product of $\vec{v}$ and the gradient of $f$, thus:
 
 $$
 \nabla_{\vec{v}}f(x, y) = \vec{v} \cdot \nabla f = \begin{bmatrix}\vec{v}_x \\ \vec{v}_y \end{bmatrix} \cdot \begin{bmatrix} \dfrac{\partial f}{\partial x} \\ \dfrac{\partial f}{\partial y} \end{bmatrix}.
@@ -88,7 +88,12 @@ $$
 \nabla_{\vec{v}} f(\vec{a}) = \lim_{h \rightarrow 0} \dfrac{f(\vec{a} + h\vec{v}) - f(\vec{a})}{h}.
 $$
 
-The directional derivative can be defined in any direction, but a particular interesting one, is in the direction of the steepest ascent, which is given by the gradient. This is useful to find a local optimum or minimum of a function. More about this later when we are discussing the applications of multivariable derivatives.
+The directional derivative can be defined in any direction, but a particular interesting one is in the direction of the steepest ascent, which is given by the gradient. This is useful to find a local optimum or minimum. More about this later when we are discussing the applications of multivariable derivatives.
 
 !!! note
-    Note that $\vec{v} \cdot \nabla f$ is a dot-product of two vectors, which result in a scalar value (if $f$ is evaluated).
+
+    Note that $\vec{v} \cdot \nabla f$ is a dot-product of two vectors, which results in a scalar value (if $f$ is evaluated).
+
+!!! caution
+
+    If the scalar value is to be interpreted as a slope, then $\vec{v}$ **must be a unit vector**.
