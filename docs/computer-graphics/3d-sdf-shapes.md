@@ -14,10 +14,6 @@ float sdSphere(in vec3 p, float r) {
 }
 ```
 
-|Author|License|
-|--|--|
-|Lars Rotgers|Public Domain|
-
 ## Box
 
 A box has three parameters, which are stored in a `vec3`. 
@@ -34,13 +30,6 @@ float sdBox( vec3 p, vec3 b )
   return length(max(q,0.0)) + min(max(q.x,max(q.y,q.z)),0.0);
 }
 ```
-
-|Author|License|
-|--|--|
-|Inigo Quilez|The MIT License|
-
-
-## Cylinder
 
 # Credits
 

@@ -8,9 +8,9 @@ as illustrated in the image below.
     <caption>Source &mdash; Wikipedia</caption>
 </figure>
 
-Let $P$ be the point on the surface, then:
+Let $\mathbf{P}$ be the point on the surface, then:
 
- * $\mathbf{N}$ is the normal vector of the surface at $\mathbf{P\mathbf{$.
+ * $\mathbf{N}$ is the normal vector of the surface at $\mathbf{P}$.
  * $\mathbf{L}$ is the vector from $\mathbf{P}$ to the light source.
  * $\mathbf{V}$ is the vector from $\mathbf{P}$ to the camera (eye).
  * $\mathbf{H}$ is the halfway vector between $\mathbf{L}$ and $\mathbf{V}$.
@@ -35,7 +35,7 @@ $$
 where 
 
 <figure>
-    <img src="../img/diffuse.png" width="300">
+    <img src="diffuse.png" width="300">
 </figure>
 
 ```glsl
@@ -51,7 +51,7 @@ Wrapping the light can be used to fake subsurface scattering or area light.
 A parameter `wrap` is used which is a value between $[0, 1]$.
 
 <figure>
-    <img src="../img/diffuse-wrapped.png" width="300">
+    <img src="diffuse-wrapped.png" width="300">
 </figure>
 
 ```glsl
@@ -65,7 +65,7 @@ float brdf_lambertian_wrapped(vec3 N, vec3 L) {
 ## Phong
 
 <figure>
-    <img src="../img/phong.png" width="300">
+    <img src="phong.png" width="300">
 </figure>
 
 ```glsl
@@ -82,7 +82,7 @@ TBA
 ## Gaussian
 
 <figure>
-    <img src="../img/gauss.png" width="300">
+    <img src="gauss.png" width="300">
 </figure>
 
 ```glsl
@@ -97,7 +97,7 @@ float brdf_gaussian(vec3 N, vec3 H, float m) {
 ## Beckmann
 
 <figure>
-    <img src="../img/beckmann.png" width="300">
+    <img src="beckmann.png" width="300">
 </figure>
 
 ```glsl
@@ -119,7 +119,7 @@ The GGX lighting model is a microfacet model for refracting through rough surfac
 
 
 <figure>
-    <img src="../img/ggx.png" width="300">
+    <img src="ggx.png" width="300">
 </figure>
 
 ```glsl
@@ -150,11 +150,10 @@ Author: John Hable
 
 # Further Reading
 
-optimizing-ggx-shaders-with-dotlh/).
-* [Physically Based Lighting at Pixar](https://blog.selfshadow.com/publications/s2013-shading-course/pixar/s2013_pbs_pixar_notes.pdf).
-* [Physically Based Shading at Disney](https://neil3d.github.io/assets/pdf/s2012_pbs_disney_brdf_notes_v3.pdf).
-* [Real Shading in Unreal Engine 4](https://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf).
+* [Physically Based Lighting at Pixar](https://blog.selfshadow.com/publications/s2013-shading-course/pixar/s2013_pbs_pixar_notes.pdf)
+* [Physically Based Shading at Disney](https://neil3d.github.io/assets/pdf/s2012_pbs_disney_brdf_notes_v3.pdf)
+* [Real Shading in Unreal Engine 4](https://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf)
 
 # References
 
-* [1] [Optimizing GGX Shaders with dot(L,H)](http://filmicworlds.com/blog/
+* [1] [Optimizing GGX Shaders with dot(L,H)](http://filmicworlds.com/blog/)

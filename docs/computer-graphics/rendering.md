@@ -2,6 +2,8 @@
 
 ## Camera
 
+This is used to create an orthonormal basis for the camera. This can then be used to easily navigate the camera, because we have vectors to go forward, left, or up (and the inverse of those).
+
 ```glsl
 vec3 ro = vec3(0,0,-1.);
 vec3 ta = vec3(0,0,0);
@@ -10,6 +12,12 @@ vec3 uu = normalize(cross(ww, vec3(0,1,0)));
 vec3 vv = normalize(cross(uu,ww));
 vec3 rd = normalize(uv.x*uu + uv.y*vv + 1.0*ww);
 ```
+
+ 
+ * $\textrm{ro}$ is the ray origin.
+ * $\textrm{ta}$ is the target (where we are looking at).
+ * $\textrm{ww}$, $\textrm{uu}$, $\textrm{vv}$ is the orthonormal basis.
+ * $\textrm{rd}$ is the ray direction.
 
 ## Raymarcher
 
