@@ -89,3 +89,6 @@ $$
 $$
 
 The directional derivative can be defined in any direction, but a particular interesting one, is in the direction of the steepest ascent, which is given by the gradient. This is useful to find a local optimum or minimum of a function. More about this later when we are discussing the applications of multivariable derivatives.
+
+!!! note
+    Note that $\vec{v} \cdot \nabla f$ is a dot-product of two vectors.
