@@ -60,7 +60,7 @@ We can find the gradient of $f$, which is $\nabla f = \begin{bmatrix} 2x & 2y \e
 
 ![Gradient field of x^2 + y^2](gradient%20x2+y2.png)
 
-Here we can see that each of the vectors point in the direction of the steepest ascent. Or in other words, **the gradient points into the direction of the steepest ascent**. Another thing to note, is that the gradient vector is always perpendicular to counter lines.
+Here we can see that each of the vectors point in the direction of the steepest ascent. Or in other words, **the gradient points into the direction of the steepest ascent**. Another thing to note, is that the gradient vector is always perpendicular to contour lines.
 
 !!! note
 
