@@ -54,14 +54,15 @@ The $\nabla$ (nabla) symbol denotes a vector of operators, so $\nabla f$, means 
 
 Let $f(x, y) = x^2 + y^2$. The illustration below is the graph of $f$.
 
-![Plot of x^2 + y^2](/docs/calculus/multi-variable/x2+y2.png)
+![Plot of x^2 + y^2](x2+y2.png)
 
 We can find the gradient, which is is: $\nabla f = \begin{bmatrix} 2x & 2y \end{bmatrix}^T$. Then to visualize the gradient, we create a vector field plot of $\nabla f$, which is also called the gradient plot:
 
-![Gradient field of x^2 + y^2](/docs/calculus/multi-variable/gradient%20x2+y2.png)
+![Gradient field of x^2 + y^2](gradient%20x2+y2.png)
 
 Here we can see that each of the vectors point in the direction of the steepest ascent. Or in other words, **the gradient points into the direction of the steepest ascent**.
 
 !!! note
+
     It is not guaranteed that it points towards the highest point in the function, it only points in the direction of the steepest ascent!
 
