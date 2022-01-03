@@ -6,4 +6,4 @@ The goal is not to explain it here, it simply acts as a reference. There are ton
 
 ## Contents
 
-Currently only the Calculus section is being filled, since my goal is to finish the multi variable calculus section, and vector calculus, since bachelor Applied Mathematics has skipped these wonderful chapters.
+Currently only the Calculus section is being filled, since my goal is to finish the multi variable calculus section, and vector calculus, since my bachelor Applied Mathematics has skipped these wonderful chapters.

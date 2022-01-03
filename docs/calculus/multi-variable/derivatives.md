@@ -1,4 +1,4 @@
-# Multi variable derivatives
+# Multivariable derivatives
 
 ## Formal definition
 
@@ -42,7 +42,7 @@ If you get tired of writing $\dfrac{\partial^2f}{\partial x \partial y}$, this c
 
 ## Gradient
 
-Let $f(x_1, x_2, \ldots, x_n)$ be a multi-variable function with $n$ variables, then the gradient of $f$ is:
+Let $f(x_1, x_2, \ldots, x_n)$ be a multivariable function with $n$ variables, then the gradient of $f$ is:
 
 $$
 \nabla f = \begin{bmatrix} \dfrac{\partial}{\partial x_1} \\ \dfrac{\partial}{\partial x_2} \\ \vdots \\ \dfrac{\partial}{\partial x_n}  \end{bmatrix} f = \begin{bmatrix} \dfrac{\partial f}{\partial x_1} \\ \dfrac{\partial f}{\partial x_2} \\ \vdots \\ \dfrac{\partial f}{\partial x_n}  \end{bmatrix}.
@@ -60,7 +60,7 @@ We can find the gradient of $f$, which is $\nabla f = \begin{bmatrix} 2x & 2y \e
 
 ![Gradient field of x^2 + y^2](gradient%20x2+y2.png)
 
-Here we can see that each of the vectors point in the direction of the steepest ascent. Or in other words, **the gradient points into the direction of the steepest ascent**.
+Here we can see that each of the vectors point in the direction of the steepest ascent. Or in other words, **the gradient points into the direction of the steepest ascent**. Another thing to note, is that the gradient vector is always perpendicular to counter lines.
 
 !!! note
 
