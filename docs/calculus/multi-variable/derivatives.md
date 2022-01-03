@@ -39,3 +39,14 @@ $$
 ## Simpler notation
 
 If you get tired of writing $\dfrac{\partial^2f}{\partial x \partial y}$, this can be written simpler as $f_{xy}$.
+
+## Gradient
+
+Let $f(x_1, x_2, \ldots, x_n)$ be a multi-variable function with $n$ variables, then the gradient of $f$ is:
+
+$$
+\nabla f = \begin{bmatrix} \dfrac{\partial}{\partial x_1} \\ \dfrac{\partial}{\partial x_2} \\ \vdots \\ \dfrac{\partial}{\partial x_n}  \end{bmatrix} f = \begin{bmatrix} \dfrac{\partial f}{\partial x_1} \\ \dfrac{\partial f}{\partial x_2} \\ \vdots \\ \dfrac{\partial f}{\partial x_n}  \end{bmatrix}.
+$$
+
+The $\nabla$ (nabla) symbol denotes a vector of operators, so $\nabla f$, means that we apply the operator $\nabla$ to $f$.
+
