@@ -76,7 +76,7 @@ $$
 \nabla_{\vec v} f(x, y) = -\dfrac{\partial f}{\partial x} + 2\dfrac{\partial f}{\partial y}.
 $$
 
-Note that $\nabla_{\vec v}$ is used to denote the gradient of $f$ in the direction of $\vec{v}$. As you can see, we simply take the linear combination of the partial derivatives and multiply each of them by the corresponding component in $\vec{v}$. The sharp eyed reader will see that this is the dot-product of $\vec{v}$ and the gradient of $f$, thus:
+Note that $\nabla_{\vec v}$ is used to denote the gradient of $f$ in the direction of $\vec{v}$. As you can see, we simply take the linear combination of the partial derivatives and each of the corresponding component in $\vec{v}$. The sharp eyed reader will see that this is the dot-product of $\vec{v}$ and the gradient of $f$, thus:
 
 $$
 \nabla_{\vec{v}}f(x, y) = \vec{v} \cdot \nabla f = \begin{bmatrix}\vec{v}_x \\ \vec{v}_y \end{bmatrix} \cdot \begin{bmatrix} \dfrac{\partial f}{\partial x} \\ \dfrac{\partial f}{\partial y} \end{bmatrix}.
