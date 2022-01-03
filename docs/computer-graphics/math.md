@@ -21,6 +21,25 @@ mat2 rotate(float a) {
     p.xz *= rotate(angle); 
     ```
 
+## Smoothstep
+
+The smoothstep is, in basis, a linear interpolation of the following two functions:
+
+ 1. $f(x) = x^2$.
+ 2. $g(x) = 1 - (x - 1)^2$.
+
+Which we then interpolate:
+
+$$
+h(x) = f(x)(1 -x) + g(x)x.
+$$
+
+With some algebra, clamping, and parametrizing the slope, we get the complete definition of the smoothstep function:
+
+$$
+\textrm{smoothstep}(x, t_1, t_2) = \max\left\{0, \min\left\{1, \dfrac{x - t_1}{t_2 - t_1} \right\} \right\}.
+$$
+
 ## Map
 
 This function will map $x$, with a range of $[a, b]$, to the range $[c, d]$.
