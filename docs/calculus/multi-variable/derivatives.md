@@ -18,7 +18,7 @@ The main take away is that we give a small nudge to the variable we want to get 
 
 ## Symmetry in higher order derivatives
 
-A higher order derivative is when we take the derivative of function multiple times. This is denoted as
+A higher order derivative is when we take the derivative of a function multiple times. This is denoted as
 
 $$
 \dfrac{\partial^2f}{\partial x^2}
@@ -34,7 +34,7 @@ $$
 
 !!! note
 
-    The notion of a higher order derivative is only applicable if the second derivative is continuous around a point $P$, e.g. the point we are evaluating.
+    The notion of a higher order derivative is only applicable if the order of the derivative is continuous around a point $P$, e.g. the point we are evaluating.
 
 ## Simpler notation
 
