@@ -37,8 +37,23 @@ $$
 With some algebra, clamping, and parametrizing the slope, we get the complete definition of the smoothstep function:
 
 $$
-\textrm{smoothstep}(x, t_1, t_2) = \max\left\{0, \min\left\{1, \dfrac{x - t_1}{t_2 - t_1} \right\} \right\}.
+\textrm{smoothstep}(x, t_1, t_2) := k^2(3-2k)
 $$
+
+where $k$ is
+
+$$
+\max\left\{0, \min\left\{1, \dfrac{x - t_1}{t_2 - t_1} \right\} \right\}.
+$$
+
+Implementing this in GLSL gives:
+
+```glsl
+float smoothstep(float x, float t1, float t2) {
+    float k = max(0., min(1., (x - t1) / (t2 - t1)));
+    return k * k * (3 - 2 * k);
+}
+```
 
 ## Map
 
