@@ -48,7 +48,7 @@ $$
 \nabla f = \begin{bmatrix} \dfrac{\partial}{\partial x_1} \\ \dfrac{\partial}{\partial x_2} \\ \vdots \\ \dfrac{\partial}{\partial x_n}  \end{bmatrix} f = \begin{bmatrix} \dfrac{\partial f}{\partial x_1} \\ \dfrac{\partial f}{\partial x_2} \\ \vdots \\ \dfrac{\partial f}{\partial x_n}  \end{bmatrix}.
 $$
 
-The $\nabla$ (nabla) symbol denotes a vector of operators, so $\nabla f$, means that we apply the operator $\nabla$ to $f$.
+The $\nabla$ (nabla) symbol denotes a vector of differential operators, so $\nabla f$, means that we apply the operator $\nabla$ to $f$.
 
 ### Visual example of the gradient
 
@@ -66,3 +66,26 @@ Here we can see that each of the vectors point in the direction of the steepest 
 
     It is not guaranteed that it points towards the highest point in the function, it only points in the direction of the steepest ascent!
 
+## Directional derivative
+
+As of now we have only looked at partial derivatives such as $\dfrac{\partial}{\partial x}$ which is the derivative in the $x$ direction, and likewise $\dfrac{\partial}{\partial y}$ is the derivative in the $y$-direction. However, we can also take the derivative in any direction of the function $f(x,y)$, which is knows as the directional derivative.
+
+Let $f(x, y) = x^2y$, and suppose we want to take the derivative in the direction of $\vec{v} = (-1, 2)$. The directional derivative then is:
+
+$$
+\nabla_{\vec v} f(x, y) = -\dfrac{\partial f}{\partial x} + 2\dfrac{\partial f}{\partial y}.
+$$
+
+Note that $\nabla_{\vec v}$ is used to denote the gradient of $f$ in the direction of $\vec{v}$. As you can see, we simply take the linear combination of the partial derivatives and multiply each of them by the corresponding component in $\vec{v}$. The sharp eyed reader will see that this is the dot-product of $\vec{v}$ and the gradient of $f$, thus:
+
+$$
+\nabla_{\vec{v}}f(x, y) = \vec{v} \cdot \nabla f = \begin{bmatrix}\vec{v}_x \\ \vec{v}_y \end{bmatrix} \cdot \begin{bmatrix} \dfrac{\partial f}{\partial x} \\ \dfrac{\partial f}{\partial y} \end{bmatrix}.
+$$
+
+Note that $\vec{v}\cdot\nabla f$ is still a function, and we need to evaluate it at a point $\vec{a}$ to get the scalar value. This also leads to the formal defintion of the directional derivative, which is defined as:
+
+$$
+\nabla_{\vec{v}} f(\vec{a}) = \lim_{h \rightarrow 0} \dfrac{f(\vec{a} + h\vec{v}) - f(\vec{a})}{h}.
+$$
+
+The directional derivative can be defined in any direction, but a particular interesting one, is in the direction of the steepest ascent, which is given by the gradient. This is useful to find a local optimum or minimum of a function. More about this later when we are discussing the applications of multivariable derivatives.
