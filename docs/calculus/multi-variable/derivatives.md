@@ -96,4 +96,6 @@ The directional derivative can be defined in any direction, but a particular int
 
 !!! caution
 
-    If the scalar value is to be interpreted as a slope, then $\vec{v}$ **must be a unit vector**.
+    If the scalar value is to be interpreted as a slope, then $\vec{v}$ **must be a unit vector**, e.g. $||\ \vec{v}\ || = 1$.
+
+
