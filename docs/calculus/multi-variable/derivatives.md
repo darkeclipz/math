@@ -70,7 +70,7 @@ Here we can see that each of the vectors point in the direction of the steepest 
 
 As of now we have only looked at partial derivatives such as $\dfrac{\partial}{\partial x}$ which is the derivative in the $x$ direction, and likewise $\dfrac{\partial}{\partial y}$ is the derivative in the $y$-direction. However, we can also take the derivative in any direction of the function $f(x,y)$, which is knows as the directional derivative.
 
-Let $f(x, y) = x^2y$, and suppose we want to take the derivative in the direction of $\vec{v} = (-1, 2)$. The directional derivative then is:
+Let $f(x, y)$ be a function and suppose we want to take the derivative in the direction of $\vec{v} = (-1, 2)$. The directional derivative then is:
 
 $$
 \nabla_{\vec v} f(x, y) = -\dfrac{\partial f}{\partial x} + 2\dfrac{\partial f}{\partial y}.
