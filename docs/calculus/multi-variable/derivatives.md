@@ -54,7 +54,7 @@ The $\nabla$ (nabla) symbol denotes a vector of differential operators, so $\nab
 
 Let $f(x, y) = x^2 + y^2$. The illustration below is the graph of $f$.
 
-![Plot of x^2 + y^2](x2+y2.png)
+![Plot of x^2 + y^2](../x2+y2.png)
 
 We can find the gradient of $f$, which is $\nabla f = \begin{bmatrix} 2x & 2y \end{bmatrix}^T$. To visualize the gradient, we create a vector field plot of $\nabla f$, which is also called the gradient plot:
 
@@ -98,4 +98,20 @@ The directional derivative can be defined in any direction, but a particular int
 
     If the scalar value is to be interpreted as a slope, then $\vec{v}$ must be a unit vector, e.g. $||\ \vec{v}\ || = 1$.
 
+## Vector-valued functions
 
+Suppose we have a curve $C$ which is parametrized by $x = x(t)$ and $y = y(t)$ on the interval $a \leq t \leq b$, then we can vectorize this in the following way:
+
+$$
+\vec{r}(t) = \begin{bmatrix} x(t) \\ y(t) \end{bmatrix}
+$$
+
+Note that $\vec{r}(t)$ is a vector-valued function. Another way of writing this is using the unit vectors $\hat{i}$ and $\hat{j}$, giving $\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j}$.
+
+The formal definition of the derivative of a vector-valued function is:
+
+$$
+\lim_{h \rightarrow 0} \dfrac{\vec{r}(t + h) - \vec{r}(t)}{h}.
+$$
+
+This can then be used to find the derivative of a vector-valued function. This is useful to find for example the velocity of $\vec{r}(t)$ which is $x'(t)\hat{i} + y'(t)\hat{j}$, or the speed which is $\sqrt{(x'(t))^2 + (y'(t))^2}$.
