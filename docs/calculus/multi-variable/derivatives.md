@@ -115,3 +115,29 @@ $$
 $$
 
 This can then be used to find the derivative of a vector-valued function. This is useful to find for example the velocity of $\vec{r}(t)$ which is $x'(t)\hat{i} + y'(t)\hat{j}$, or the speed which is $\sqrt{(x'(t))^2 + (y'(t))^2}$.
+
+## Multivariable chain rule
+
+Suppose we have a function $f(x, y)$ with $x(t)$ and $y(t)$, then we want to find the derivative of $f(x(t), y(t))$. Simply plugging all the values in and taking the ordinary derivative will give us the result. However, if you take notice, you will see that it will be in the form of:
+
+$$
+\dfrac{\mathrm{d}}{\mathrm{d}t} \Big( f(x(t), y(t)) \Big) = 
+\dfrac{\partial f}{\partial x}\cdot \dfrac{\mathrm{d}x}{\mathrm{d}t} +
+\dfrac{\partial f}{\partial y}\cdot \dfrac{\mathrm{d}y}{\mathrm{d}t}.
+$$
+
+This derivative gives the change in $f$ by the change of $t$. 
+
+Note that this is the dot-product of the partial derivatives and the ordinary derivatives. Let $\vec{v} = (x(t), y(y))$. We know that the vector of partial derivatives of $f$ is the gradient of $f$. The other vector is a vector with the ordinary derivatives. Rewriting this in vector notation gives
+
+$$
+\nabla f(\vec{v}(t)) \cdot \vec{v}'(t) = \begin{bmatrix} \dfrac{\partial f}{\partial x} \\ \dfrac{\partial f}{\partial y} \end{bmatrix} \cdot \begin{bmatrix} \dfrac{\mathrm{d}x}{\mathrm{d}t} \\ \dfrac{\mathrm{d}y}{\mathrm{d}t} \end{bmatrix},
+$$
+
+which is the generalized multivariable chain rule. This example only shows two variables, but this extends to any number of variables. Also note that $f$ is a scalar-valued function that is composed with a vector-valued function. In other words, the input is one dimension, the function in between can be in any dimensions, and the output is again in one dimension. The dimension of $f$ is obviously determined by the number of components that are in the output of the vector-valued function.
+
+Notice the similarity with the definition of the directional derivative. By giving a small nudge to $t$, we are moving the $\vec{v}$ a little bit, and as a result we have a small change in $f$. The change in $f$ is given by the derivative of $\vec{v}$. Or in other words, we are moving into the direction of $\vec{v}'(t)$. This beautiful results tells us that the multivariable chain rule is essentially a directional derivative in the direction of $\vec v'(t)$:
+
+$$
+\nabla f(\vec{v}(t)) \cdot \vec{v}'(t) = \nabla_{\vec{v}`(t)} f(\vec v(t))
+$$
