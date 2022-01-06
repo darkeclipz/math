@@ -139,5 +139,5 @@ which is the generalized multivariable chain rule. This example only shows two v
 Notice the similarity with the definition of the directional derivative. By giving a small nudge to $t$, we are moving the $\vec{v}$ a little bit, and as a result we have a small change in $f$. The change in $f$ is given by the derivative of $\vec{v}$. Or in other words, we are moving into the direction of $\vec{v}'(t)$. This beautiful results tells us that the multivariable chain rule is essentially a directional derivative in the direction of $\vec v'(t)$:
 
 $$
-\nabla f(\vec{v}(t)) \cdot \vec{v}'(t) = \nabla_{\vec{v}`(t)} f(\vec v(t))
+\nabla f(\vec{v}(t)) \cdot \vec{v}'(t) = \nabla_{\vec{v}'(t)} f(\vec v(t)).
 $$
